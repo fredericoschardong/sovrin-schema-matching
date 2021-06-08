@@ -1,10 +1,10 @@
 <a href="https://github.com/fredericoschardong/sovrin-schema-matching/actions?query=workflow%3Abuild"><img alt="Actions Status" src="https://github.com/fredericoschardong/sovrin-schema-matching/workflows/build/badge.svg"></a><a href="https://github.com/fredericoschardong/sovrin-schema-matching/actions?query=workflow%3Apooling"><img alt="Actions Status" src="https://github.com/fredericoschardong/sovrin-schema-matching/workflows/pooling/badge.svg"></a>
 
-# Self-Sovereign Identity: Matching Metadata on Blockchain
+# Matching Metadata on Blockchain for Self-Sovereign Identity
 
-Schema matching on the Sovrin ledger using natural language processing.
+Schema matching on the Sovrin network using natural language processing.
 
-## Downloading the schemas and populating the RocksDB database
+## Downloading the latest schemas from the ledger
 
 Build the docker image for the pooling service:
 
@@ -35,7 +35,7 @@ First you have to build the docker image for the schema matching CLI:
 $ docker build -t sovrin-schema-matching:cli .
 ```
 
-Whatever is provided on the `stdio` is queried. Also, the `sovrinxplore/ledgers` folder needs to be shared to get the latest schemas:
+Whatever is provided on the `stdio` is queried. Also, the `sovrinxplore/ledgers` folder needs to be shared to get the latest schemas (or you can rebuild the docker image on your cron job):
 
 ```
 $ echo "first name" | docker run --mount type=bind,source="$(pwd)/sovrinxplore/ledgers",target=/app/sovrinxplore/ledgers -i sovrin-schema-matching:cli
