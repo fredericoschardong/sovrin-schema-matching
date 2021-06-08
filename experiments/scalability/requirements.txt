@@ -1,0 +1,6 @@
+spacy==3.0.3
+texttable==1.6.3
+rocksdb==0.7.0
+scikit-learn==0.24.2
+
+https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.0.0/en_core_web_md-3.0.0.tar.gz

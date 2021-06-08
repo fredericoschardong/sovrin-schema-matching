@@ -1,0 +1,68 @@
+Query name
+Results for spacy
+              precision    recall  f1-score   support
+
+       False       0.93      0.93      0.93        96
+        True       0.79      0.79      0.79        33
+
+    accuracy                           0.89       129
+   macro avg       0.86      0.86      0.86       129
+weighted avg       0.89      0.89      0.89       129
+
+
+Results for indy
+              precision    recall  f1-score   support
+
+       False       0.83      1.00      0.91        96
+        True       1.00      0.42      0.60        33
+
+    accuracy                           0.85       129
+   macro avg       0.92      0.71      0.75       129
+weighted avg       0.88      0.85      0.83       129
+
+
+Results for vonx
+              precision    recall  f1-score   support
+
+       False       0.92      1.00      0.96        96
+        True       1.00      0.76      0.86        33
+
+    accuracy                           0.94       129
+   macro avg       0.96      0.88      0.91       129
+weighted avg       0.94      0.94      0.93       129
+
+
+Query company
+Results for spacy
+              precision    recall  f1-score   support
+
+       False       0.98      0.98      0.98       122
+        True       0.57      0.57      0.57         7
+
+    accuracy                           0.95       129
+   macro avg       0.77      0.77      0.77       129
+weighted avg       0.95      0.95      0.95       129
+
+
+Results for indy
+              precision    recall  f1-score   support
+
+       False       0.95      1.00      0.97       122
+        True       0.00      0.00      0.00         7
+
+    accuracy                           0.95       129
+   macro avg       0.47      0.50      0.49       129
+weighted avg       0.89      0.95      0.92       129
+
+
+Results for vonx
+              precision    recall  f1-score   support
+
+       False       0.95      1.00      0.97       122
+        True       0.00      0.00      0.00         7
+
+    accuracy                           0.95       129
+   macro avg       0.47      0.50      0.49       129
+weighted avg       0.89      0.95      0.92       129
+
+
